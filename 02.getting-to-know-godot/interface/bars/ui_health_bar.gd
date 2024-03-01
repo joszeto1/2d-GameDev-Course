@@ -14,8 +14,8 @@ func _ready() -> void:
 	set_health(5)
 
 
-func set_health(new_health: int) -> void:d
-health = new_health
+func set_health(new_health: int) -> void:
+	health = new_health
 	for index in _row.get_child_count():
 		var heart: TextureRect = _row.get_child(index)
 		if health > index:
