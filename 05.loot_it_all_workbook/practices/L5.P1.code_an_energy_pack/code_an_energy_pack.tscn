@@ -1,28 +1,28 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://dii3kdiitdjq3"]
 
-[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.tscn" id="1_jrchu"]
-[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.gd" id="2_y5mpa"]
-[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.tscn" id="3_1o63n"]
-[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.gd" id="4_qplhv"]
+[ext_resource type="PackedScene" uid="uid://dyt4nddd3y2iv" path="res://addons/gdquest_practice_framework/practice_solutions/L5.P1.code_an_energy_pack/ship_energy_pack.tscn" id="1_kjk3w"]
+[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.gd" id="2_x8dro"]
+[ext_resource type="PackedScene" uid="uid://c8quq7cyf586g" path="res://addons/gdquest_practice_framework/practice_solutions/L5.P1.code_an_energy_pack/energy_pack.tscn" id="3_ieqdq"]
+[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.gd" id="4_qaqlp"]
 
 [node name="CodeAnEnergyPack" type="Node2D"]
 position = Vector2(960, 540)
 
-[node name="ShipEnergyPack" type="Area2D" parent="." instance=ExtResource("1_jrchu")]
+[node name="ShipEnergyPack" parent="." instance=ExtResource("1_kjk3w")]
 position = Vector2(-556, 0)
-script = ExtResource("2_y5mpa")
+script = ExtResource("2_x8dro")
 
-[node name="EnergyPack" type="Area2D" parent="." instance=ExtResource("3_1o63n")]
+[node name="EnergyPack" parent="." instance=ExtResource("3_ieqdq")]
 position = Vector2(-221, -1)
-script = ExtResource("4_qplhv")
+script = ExtResource("4_qaqlp")
 
-[node name="EnergyPack2" type="Area2D" parent="." instance=ExtResource("3_1o63n")]
+[node name="EnergyPack2" parent="." instance=ExtResource("3_ieqdq")]
 position = Vector2(2, -1)
-script = ExtResource("4_qplhv")
+script = ExtResource("4_qaqlp")
 
-[node name="EnergyPack3" type="Area2D" parent="." instance=ExtResource("3_1o63n")]
+[node name="EnergyPack3" parent="." instance=ExtResource("3_ieqdq")]
 position = Vector2(197, -1)
-script = ExtResource("4_qplhv")
+script = ExtResource("4_qaqlp")
 
 [node name="ExtraVisuals" type="Node" parent="."]
 
